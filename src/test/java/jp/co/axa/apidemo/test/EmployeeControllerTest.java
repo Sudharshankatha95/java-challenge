@@ -55,6 +55,7 @@ public class EmployeeControllerTest {
 	}
 
 	@Test
+	@WithMockUser
 	public void getAllEmployees_success() throws Exception {
 
 		EmployeeDTO emp1 = new EmployeeDTO();
@@ -84,6 +85,7 @@ public class EmployeeControllerTest {
 	}
 
 	@Test
+	@WithMockUser
 	public void getEmployee_success() throws Exception {
 
 		EmployeeDTO emp2 = new EmployeeDTO();
@@ -136,6 +138,7 @@ public class EmployeeControllerTest {
 	}
 
 	@Test
+	@WithMockUser
 	public void updateEmployee_success() throws Exception {
 
 		EmployeeDTO employee = new EmployeeDTO();
@@ -162,6 +165,7 @@ public class EmployeeControllerTest {
 	}
 
 	@Test
+	@WithMockUser
 	public void deleteEmployee_success() throws Exception {
 
 		EmployeeDTO employeeDTO = new EmployeeDTO();
